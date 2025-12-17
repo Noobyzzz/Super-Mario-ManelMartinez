@@ -13,12 +13,17 @@ public class PlayerController : MonoBehaviour
 
     private InputAction moveAction;
     public Vector2 moveDirection;
+    private InputAction jumpAction;
 
     public Rigidbody2D rBody2D;
+    private SpriteRenderer SpriteRenderer;
 
     void Awake()
     {
         rBody2D = GetComponent<Rigidbody2D>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+        moveAction = InputSystem.actions["Move"];
+        jumpAction = InputSystem.actions["Jump"];
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,20 +31,32 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = startPosition;
 
-        moveAction = InputSystem.actions["Move"];
+        
 
-        rBody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+    
     }
 
     // Update is called once per frame
     void Update()
     {
-        //transform.position = new Vector3(transform.position.x + direction * movementSpeed * Time.deltaTime, transform.position.y, transform.position.z);
         moveDirection = moveAction.ReadValue<Vector2>();
-
-        transform.Translate(new Vector3(moveDirection.x * movementSpeed * Time.deltaTime, 0, 0));
+        //transform.position = new Vector3(transform.position.x + direction * movementSpeed * Time.deltaTime, transform.position.y, transform.position.z);
+        
 
         //transform.position = new Vector3(transform.position.x + moveDirection.x * movementSpeed * Time.deltaTime, transform.position.y, transform.position.z);
+
+        if(moveDirection.x == 1)
+
+        if(jumpAction.WasPressedThisFrame())
+        {
+             rBody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
     }
+
+void FixedUpdate()
+{
+    rBody2D.linearVelocity = new Vector2(moveDirection.x * movementSpeed, rBody2D.linearVelocity.y);
+
+}
     
 }
