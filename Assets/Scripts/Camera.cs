@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class Camera : MonoBehaviour
 {
     private Transform cameraTarget;
     public Vector3 cameraOffset;
@@ -10,16 +10,15 @@ public class CameraController : MonoBehaviour
 
     void Awake()
     {
-        //cameraTarget = GameObject.Find("Mario").GetComponent<Transform>();
-        cameraTarget = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+       //cameraTarget = GameObject.Find("Mario").GetComponent<Transform>();
+       cameraTarget = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
+    
 
     // Update is called once per frame
     void Update()
     {
-        //transform.position = cameraTarget.position + cameraOffset;
         //transform.position = new Vector3(cameraTarget.position.x, 0, 0) + cameraOffset;
-
         Vector3 desiredPosition = cameraTarget.position + cameraOffset;
 
         float clampX = Mathf.Clamp(desiredPosition.x, minCameraPosition.x, maxCameraPosition.x);
