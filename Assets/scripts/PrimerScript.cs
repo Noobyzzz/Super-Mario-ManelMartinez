@@ -1,16 +1,14 @@
 using UnityEngine;
 
-public class P : MonoBehaviour
+public class PrimerScript : MonoBehaviour
 {
-    private int numeroEntero = 5;
-
+    public int numeroEntero = 5;
     private float numeroDecimal = 7.5f;
-
+    private double decimalLargo = 8.4;
     private bool verdaderoFalse = false;
-    //variable para almacenar texti
-    private string cadenaTexto = "hola";
+    //variable para almacenar texto
+    private string cadenaTexto = "Hola";
     //variable para almacenar letras
-
     private char letra = 'a';
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,22 +18,24 @@ public class P : MonoBehaviour
 
         cadenaTexto = "Hola Mundo";
 
-        Debug.Log(cadenaTexto);
+        Debug.Log(cadenaTexto + "aasfdafd");
+        Debug.Log(numeroEntero);
 
-         Calculo();
+        Calculo();
     }
 
-    void Calculo()
+    public void Calculo()
     {
-       numeroEntero = 7 + 5;
-       numeroEntero = 6 * 9;
-       numeroEntero = 2 - 7;
-       numeroEntero = 4 / 3;   
+        numeroEntero = 7 + 5;
+        numeroEntero = 2 - 7;
+        numeroEntero = 6 * 9;
+        numeroEntero = 4 / 3;
 
-       numeroEntero = numeroEntero + 2;
-       numeroEntero += 4;
-       numeroEntero -= 3;
-       numeroEntero++;
+        numeroEntero = numeroEntero + 2;
+        numeroEntero += 2;
+        numeroEntero -= 2;
+
+        numeroEntero++;
     }
 
     // Update is called once per frame
