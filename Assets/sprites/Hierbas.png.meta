@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 221a7d374398efd4b8d5655adcfe84c2
+guid: 31bb0d96f43b1434d9905bfdb91e52ad
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -111,10 +111,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 33
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -131,12 +131,12 @@ TextureImporter:
       name: Hierbas_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 33
         y: 0
-        width: 64
+        width: 66
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: Hierbas_2
       rect:
         serializedVersion: 2
-        x: 100
+        x: 99
         y: 0
-        width: 48
+        width: 49
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 30648b335de4ca146b9d9f8673350219
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

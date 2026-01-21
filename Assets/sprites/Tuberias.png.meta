@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 06a9c6692ebabc64cbe1203b96aeecb5
+guid: 2ca3223914cdb9f4989b50581d7f734d
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -160,9 +160,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 37
-        width: 32
-        height: 32
+        y: 36
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: Tuberias_3
       rect:
         serializedVersion: 2
-        x: 37
-        y: 37
-        width: 34
-        height: 32
+        x: 36
+        y: 36
+        width: 36
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +203,10 @@ TextureImporter:
       name: Tuberias_4
       rect:
         serializedVersion: 2
-        x: 41
+        x: 40
         y: 0
-        width: 32
-        height: 32
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 97a321aa5de90eb4e97dc5d371e4db17
+    spriteID: 221a3fadb75765a429e2a14c58e461ea
     internalID: 0
     vertices: []
     indices: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3fe6433ab2f53345aadfaaf15d2b10a
+guid: c29f3d70653068f4eb2fb82a93cf0d69
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -108,10 +108,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 19
+        width: 49
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -128,12 +128,12 @@ TextureImporter:
       name: Montanas_1
       rect:
         serializedVersion: 2
-        x: 51
+        x: 50
         y: 0
-        width: 80
+        width: 81
         height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 01f7e52dfddc6ca44be1f773c58b5e81
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
