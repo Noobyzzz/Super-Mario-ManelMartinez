@@ -78,12 +78,12 @@ public class PlayerControler : MonoBehaviour
             animator.SetBool("IsRunning", false);
         }
 
-        if (jumpAction.WasPressedThisFrame() && sensor.isGrouned)
+        if (jumpAction.WasPressedThisFrame() && sensor.isGrounded)
         {
             rBody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
-        animator.SetBool("IsJumping", !sensor.isGrouned);
+        animator.SetBool("IsJumping", !sensor.isGrounded);
     
 
     }

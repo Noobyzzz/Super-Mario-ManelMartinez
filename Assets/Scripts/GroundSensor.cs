@@ -1,40 +1,47 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class GroundSensor : MonoBehaviour
 {
-   public bool isGrouned;
-   
+    PlayerController _playerScript;
 
-  void OnTriggerEnter2D(Collider2D collision)
-  {
-    if(collision.gameObject.layer == 6)
-     {
-        isGrouned = true;
-     } 
+    void Awake()
+    {
+        _playerScript = GetComponentInParent<PlayerController>();
+    }
 
-  }
+    public bool isGrounded;
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.layer == 6)
+        {
+            isGrounded = true;
+        }
 
-  void OnTriggerStay2D(Collider2D collision)
-  {
-    if(collision.gameObject.layer == 6)
-     {
-        isGrouned = true;
-     } 
-  }
+        if(collision.gameObject.layer == 7)
+        {
+            //Destroy(collision.gameObject);
+            Goomba _enemyScript  = collision.gameObject.GetComponent<Goomba>(); 
+            _enemyScript.GoombaDeath();
 
+            _playerScript.Bounce();
+        }
+    }
 
-  void OnTriggerExit2D(Collider2D collision)
-  {
-    if(collision.gameObject.layer == 6)
-     {
-        isGrouned = false;
-     } 
-  }
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.gameObject.layer == 6)
+        {
+            isGrounded = true;
+        }
+    }
 
-
-
-
-
-
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.layer == 6)
+        {
+            isGrounded = false;
+        }
+    }
 }
