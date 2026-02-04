@@ -8568,7 +8568,7 @@ GameObject:
   - component: {fileID: 356775984}
   m_Layer: 6
   m_Name: Tuberias_1
-  m_TagString: Untagged
+  m_TagString: Tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14276,7 +14276,7 @@ GameObject:
   - component: {fileID: 587134110}
   m_Layer: 6
   m_Name: Tuberias_0
-  m_TagString: Untagged
+  m_TagString: Tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15367,7 +15367,7 @@ GameObject:
   - component: {fileID: 607715766}
   m_Layer: 6
   m_Name: Tuberias_0  (1)
-  m_TagString: Untagged
+  m_TagString: Tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16475,7 +16475,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.042, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5625, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1903016416}
@@ -18483,7 +18483,7 @@ GameObject:
   - component: {fileID: 731920602}
   m_Layer: 6
   m_Name: Tuberias_0
-  m_TagString: Untagged
+  m_TagString: Tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24527,7 +24527,7 @@ GameObject:
   - component: {fileID: 936742821}
   m_Layer: 6
   m_Name: Tuberias_1
-  m_TagString: Untagged
+  m_TagString: Tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26976,7 +26976,7 @@ GameObject:
   - component: {fileID: 1037929448}
   m_Layer: 6
   m_Name: Tuberias_1
-  m_TagString: Untagged
+  m_TagString: Tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32194,7 +32194,7 @@ GameObject:
   - component: {fileID: 1254869489}
   m_Layer: 6
   m_Name: "Tuberia peque\xF1a"
-  m_TagString: Untagged
+  m_TagString: Tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37893,7 +37893,7 @@ GameObject:
   - component: {fileID: 1429837984}
   m_Layer: 6
   m_Name: Tuberias_1
-  m_TagString: Untagged
+  m_TagString: Tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53708,7 +53708,7 @@ GameObject:
   - component: {fileID: 2043391931}
   m_Layer: 6
   m_Name: Tuberias_0  (2)
-  m_TagString: Untagged
+  m_TagString: Tuberias
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56233,7 +56233,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3637498214066195326, guid: bb25c8b39ef28e64fb882c580e47efed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.82
+      value: 11.85
       objectReference: {fileID: 0}
     - target: {fileID: 3637498214066195326, guid: bb25c8b39ef28e64fb882c580e47efed, type: 3}
       propertyPath: m_LocalPosition.y
@@ -56299,7 +56299,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2352568829963791964, guid: e62ba0994e6391945bef8787f1ee2b84, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.03
+      value: 8.42
       objectReference: {fileID: 0}
     - target: {fileID: 2352568829963791964, guid: e62ba0994e6391945bef8787f1ee2b84, type: 3}
       propertyPath: m_LocalPosition.y
