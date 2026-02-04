@@ -20460,10 +20460,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12c5f0c1342fe546afed5171c2a01a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 908574517}
-  spawnPosition: {fileID: 0}
-  spawnPosition2: {fileID: 0}
-  spawnPoints: {fileID: 800218312}
+  enemyPrefab:
+  - {fileID: 0}
+  spawnPoints:
+  - {fileID: 0}
   enemiesToSpawn: 5
 --- !u!4 &800218312
 Transform:
@@ -23940,11 +23940,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &908574517 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8078918855414587211, guid: bb25c8b39ef28e64fb882c580e47efed, type: 3}
-  m_PrefabInstance: {fileID: 1418754184726560819}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &908574518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3637498214066195326, guid: bb25c8b39ef28e64fb882c580e47efed, type: 3}
@@ -49310,6 +49305,7 @@ GameObject:
   - component: {fileID: 1903016418}
   - component: {fileID: 1903016419}
   - component: {fileID: 1903016420}
+  - component: {fileID: 1903016421}
   m_Layer: 0
   m_Name: Mario
   m_TagString: Player
@@ -49473,21 +49469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b162875781dd444a918d77917fb011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: 2, y: 3, z: 0}
-  movementSpeed: 5
-  direction: 1
-  moveAction:
-    m_Name: Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 47049926-b425-4437-ae38-bf138f91e7dc
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveDirection: {x: 0, y: 0}
-  rBody2D: {fileID: 0}
-  jumpForce: 12
 --- !u!95 &1903016419
 Animator:
   serializedVersion: 7
@@ -49523,6 +49504,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 1
+--- !u!114 &1903016421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903016413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7ba65223cd8c9047ba17119dd8226b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {x: 9.499, y: 4.622, z: 0}
+  movementSpeed: 5
+  jumpForce: 10
+  bounceForce: 4
+  direction: 1
+  initialPosition: {x: 0, y: 0, z: 0}
+  finalPosition: {x: 0, y: 0, z: 0}
+  moveDirection: {x: 0, y: 0}
+  rBody2D: {fileID: 0}
 --- !u!1 &1903918270
 GameObject:
   m_ObjectHideFlags: 0
