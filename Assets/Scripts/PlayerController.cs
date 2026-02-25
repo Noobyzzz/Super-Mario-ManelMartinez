@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     public Vector3 startPosition;
@@ -21,6 +21,12 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer render;
     private GroundSensor sensor;
     private Animator animator;
+    public AudioClip die;
+    private AudioSource _audioSource;
+    private BoxCollider2D _boxCollider;
+    private Sceneloader _sceneloader;
+    public GameObject groundSensorObject;
+    public GameObject musica;
 
     void Awake()
     {
@@ -28,6 +34,9 @@ public class PlayerController : MonoBehaviour
         render = GetComponent<SpriteRenderer>();
         sensor = GetComponentInChildren<GroundSensor>();
         animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
+        _boxCollider = GetComponent<BoxCollider2D>();
+        _sceneloader = GameObject.Find("Scene Loader").GetComponent<Sceneloader>();
 
         moveAction = InputSystem.actions["Move"];
         jumpAction = InputSystem.actions["Jump"];
@@ -90,4 +99,35 @@ public class PlayerController : MonoBehaviour
     {
         rBody2D.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
     }
+
+     public IEnumerator MarioDeath()
+    {
+
+        animator.SetBool("IsDeath", true);
+        
+        Destroy(groundSensorObject);
+        Destroy(musica);
+        
+       
+        
+        _audioSource.PlayOneShot(die);
+
+        movementSpeed = 0;
+
+        _boxCollider.enabled = false;
+        
+
+        Destroy(gameObject, 4);
+
+        yield return new WaitForSeconds(3);
+    
+
+        _sceneloader.ChangeScene("muerte");
+
+        
+
+        //_audioSource.clip = deathSFX;
+        //_audioSource.Play();   
+    }
 }
+

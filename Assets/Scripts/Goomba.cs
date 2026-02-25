@@ -11,7 +11,6 @@ public class Goomba : MonoBehaviour
 
     public float movementSpeed = 4;
     public int direction = 1;
-
     void Awake()
     {
         _rigidBody2D = GetComponent<Rigidbody2D>();
@@ -46,10 +45,16 @@ public class Goomba : MonoBehaviour
             direction *= -1;
         }
 
-        if(collision.gameObject.CompareTag("Player"))
+       if(collision.gameObject.tag == "Player")
         {
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
+            PlayerController _enemyScript  = collision.gameObject.GetComponent<PlayerController>();
+
+            StartCoroutine(_enemyScript.MarioDeath());
+
+
         }
+    
     }
 
     public void GoombaDeath()
